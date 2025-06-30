@@ -1,0 +1,19 @@
+workflows:
+  android-app:
+    name: Build Android APK
+    max_build_duration: 10
+    environment:
+      android_signing:
+        keystore_reference: "default_keystore"
+      vars:
+        PACKAGE_NAME: "daysalarm.mahmoud.com"
+    scripts:
+      - name: Build with Gradle
+        script: |
+          ./gradlew clean build
+    artifacts:
+      - app/build/outputs/**/*.apk
+    publishing:
+      email:
+        recipients:
+          - YOUR_EMAIL@example.com 
