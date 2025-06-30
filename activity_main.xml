@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:padding="24dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView android:text="Days Alarm" android:textSize="24sp" android:layout_marginBottom="16dp"
+        android:layout_width="wrap_content" android:layout_height="wrap_content" />
+
+    <Button android:id="@+id/pickStartBtn" android:text="Pick Start Date"
+        android:layout_width="match_parent" android:layout_height="wrap_content"/>
+
+    <TextView android:id="@+id/startDate" android:text="Start: Not Set"
+        android:layout_marginTop="8dp" android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <Button android:id="@+id/pickEndBtn" android:text="Pick End Date"
+        android:layout_marginTop="16dp" android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <TextView android:id="@+id/endDate" android:text="End: Not Set"
+        android:layout_marginTop="8dp" android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <ProgressBar android:id="@+id/progressBar" android:layout_marginTop="24dp"
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:max="100" style="?android:attr/progressBarStyleHorizontal"/>
+
+    <TextView android:id="@+id/percentText" android:text="0% Passed"
+        android:layout_marginTop="8dp" android:textSize="18sp"
+        android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+
+</LinearLayout>
